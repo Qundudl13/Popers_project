@@ -12,12 +12,12 @@
 .header_top {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     align-items: center;
     max-width:1300px;
     width: 100%;
-    padding: 10px;
+
 }
 
 .header_top_contacts_mobile_number, .footer_top_contacts_mobile_number {
@@ -199,6 +199,8 @@
 }
 .content_container {
     padding: 10px;
+    max-width: 1300px;
+    width: 100%;
 }
 .content_container_box {
     display: flex;
@@ -293,7 +295,7 @@ img {
 }
 .footer_top {
     display: flex;
-    padding: 25px 42px 2px 92px;
+
     justify-content: space-between;
 
 }
