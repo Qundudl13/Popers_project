@@ -17,6 +17,10 @@
     font-family: 'OpenSans-Bold';
     src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
 }
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
 /* Подключение шрифтов*/
 body {
     font-family: OpenSans-Regular;
@@ -167,6 +171,7 @@ body {
 }
 
 .header_bottom_nav_list{
+    font-family: OpenSans-Bold;
     list-style: none;
     font-style: normal;
     font-weight: 700;
@@ -200,6 +205,7 @@ body {
     background: url(../images/svg/arrow.svg);
 }
 #news {
+    font-family: OpenSans-Bold;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -209,6 +215,114 @@ body {
     color: #21048C;
     margin-bottom: 109px;
 }
+/*Main page - start*/
+.content_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.content_main_wrapper {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_main_top {
+    display: flex;
+    justify-content: space-between;
+}
+.content_main_top_img {
+    max-width: 594px;
+    max-height: 522px;
+}
+.content_main_top_text {
+    max-width: 500px;
+}
+.content_main_top_text_heading {
+    font-family: OpenSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    color: #21048C;
+}
+.content_main_top_text p {
+    font-family: OpenSans-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+.content_main_heading {
+    text-align: center;
+    font-family: OpenSans-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    color: #4F0090;
+}
+.content_main_news_products {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.content_main_news_products_unit {
+    border: 2px solid;
+    padding: 20px;
+    border-image: linear-gradient(9.59deg, #4F0090 48.67%, #21048C 90.92%);
+    border-image-slice: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+.content_main_news_products_unit img {
+    max-width: 279px;
+    max-height: 282px;
+}
+.content_main_news_products_unit_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content_main_news_products_unit_text_heading {
+    font-family: OpenSans-ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+}
+.content_main_news_products_unit_text_lvl {
+    display: flex;
+    justify-content: space-between;
+}
+.content_main_news_products_unit_text_lvl p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.content_main_news_products_unit_text_lvl_images img {
+    max-width: 28px;
+    max-height: 28px;
+}
+.content_main_news_products_unit_text_details {
+    display: flex;
+    justify-content: space-between;
+}
+.content_main_news_products_unit_text_details_weight {
+    display: flex;
+
+}
+.content_main_news_products_unit_text_details_location {
+    display: flex;
+}
+.content_main_news_products_unit_text_structure {
+    display: flex;
+}
+/*Main page - end*/
 .content {
     width: 100%;
     display: flex;
@@ -337,6 +451,7 @@ img {
 
 }
 .footer_top_catalog_heading_p {
+    font-family: OpenSans-Bold;
     font-style: normal;
     font-weight: 700;
     font-size: 33px;
@@ -363,7 +478,8 @@ img {
     line-height: 33px;
     padding-left: 40px;
 }
-.footer_top_contacts_adress h1, .footer_top_contacts_time_work h1 {
+.footer_top_contacts_heading {
+    font-family: OpenSans-bold;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -371,8 +487,16 @@ img {
     position: relative;
     padding-left: 40px
 }
-
-.footer_top_contacts_adress h1:before {
+.footer_top_contacts_heading_address {
+    font-family: OpenSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    position: relative;
+    padding-left: 38px;
+}
+.footer_top_contacts_heading_address:before {
     content: "";
     background: url(../images/svg/location.svg);
     position: absolute;
@@ -381,7 +505,16 @@ img {
     left: 0px;
     top: -8px;
 }
-.footer_top_contacts_time_work h1:before {
+.footer_top_contacts_heading_time_work {
+    font-family: OpenSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    position: relative;
+    padding-left: 38px;
+}
+.footer_top_contacts_heading_time_work:before {
     content: "";
     background: url(../images/svg/clock.svg);
     position: absolute;
@@ -401,9 +534,10 @@ img {
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
+    margin-bottom: auto;
 }
 .footer_top_contacts_social_networks {
-    margin-top: auto;
+
 }
 .footer_top_catalog_heading_m {
     font-style: normal;
