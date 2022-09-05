@@ -228,10 +228,12 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 .content_main_top {
     display: flex;
     justify-content: space-between;
+
 }
 .content_main_top_img {
     max-width: 594px;
@@ -263,6 +265,7 @@ body {
     font-size: 40px;
     line-height: 54px;
     color: #4F0090;
+    margin-bottom: 71px;
 }
 .content_main_news_products {
     display: flex;
@@ -271,14 +274,14 @@ body {
 }
 .content_main_news_products_unit {
     border: 2px solid;
-    padding: 20px;
+    padding: 10px;
     border-image: linear-gradient(9.59deg, #4F0090 48.67%, #21048C 90.92%);
     border-image-slice: 1;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
-.content_main_news_products_unit img {
+.content_main_news_products_unit_img {
     max-width: 279px;
     max-height: 282px;
 }
@@ -286,6 +289,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
 }
 .content_main_news_products_unit_text_heading {
     font-family: OpenSans-ExtraBold;
@@ -293,20 +300,30 @@ body {
     font-weight: 800;
     font-size: 20px;
     line-height: 27px;
+    text-align: center;
 }
 .content_main_news_products_unit_text_lvl {
     display: flex;
     justify-content: space-between;
-}
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    }
 .content_main_news_products_unit_text_lvl p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
 }
+.content_main_news_products_unit_text_lvl_images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
 .content_main_news_products_unit_text_lvl_images img {
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 23px;
+    max-height: 23px;
 }
 .content_main_news_products_unit_text_details {
     display: flex;
@@ -314,13 +331,111 @@ body {
 }
 .content_main_news_products_unit_text_details_weight {
     display: flex;
-
+    gap: 5px;
 }
 .content_main_news_products_unit_text_details_location {
     display: flex;
+    gap: 5px;
 }
 .content_main_news_products_unit_text_structure {
     display: flex;
+    gap: 5px;
+}
+.content_main_info {
+    text-align: center;
+}
+
+.content_main_info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+}
+#span-elem1 {
+    font-family: OpenSans-Bold;
+    color:#4F0090;
+}
+.span-elem2 {
+    color:#21048C;
+    font-family: OpenSans-Bold;
+}
+.content_main_methods_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+}
+.content_main_news_products_unit_text_cost {
+    margin-right: auto;
+    margin-left: auto;
+    background: #4F0090;
+    border-radius: 6px;
+    width: 122px;
+    height: 42px;
+    position: relative;
+    border: none;
+}
+.content_main_news_products_unit_text_cost p {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: OpenSans-SemiBold;
+    padding-left: 20px;
+}
+.content_main_news_products_unit_text_cost p:before {
+    content: "";
+    background: url(../images/svg/cart.svg);
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    left: 7px;
+    top: 9px;
+    margin-left: 10px;
+}
+.content_main_faq {
+    display: flex;
+}
+.content_main_faq_answer_heading {
+    margin-bottom: 50px;
+    font-family: OpenSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    color: #4F0090;
+}
+.content_main_faq_answer_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content_main_faq_answer_btn_unit {
+    max-width: 934.81px;
+    height: 101px;
+    background: #21048C;
+    border-radius: 101px;
+    padding: 10px;
+}
+
+.content_main_faq_answer_btn_unit p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 45px;
+    color: #FFFFFF;
+    position: relative;
+}
+.content_main_faq_answer_btn_unit p:after {
+    content: "";
+    position: absolute;
+    background: url(../images/svg/arrow.svg);
+    position: absolute;
+    width: 16px;
+    height: 9px;
+    right: 24px;
+    top: 19px;
 }
 /*Main page - end*/
 .content {
