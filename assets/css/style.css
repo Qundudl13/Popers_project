@@ -416,7 +416,10 @@ body {
     height: 101px;
     background: #21048C;
     border-radius: 101px;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content_main_faq_answer_btn_unit p {
@@ -427,16 +430,37 @@ body {
     color: #FFFFFF;
     position: relative;
 }
-.content_main_faq_answer_btn_unit p:after {
-    content: "";
-    position: absolute;
-    background: url(../images/svg/arrow.svg);
-    position: absolute;
-    width: 16px;
-    height: 9px;
-    right: 24px;
-    top: 19px;
+.content_main_faq_answer_btn_unit_img img {
+    padding-left: 13px;
+    padding-top: 10px;
 }
+.content_main_categories_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align: center;
+    padding: 10px;
+    gap: 15px;
+}
+.content_main_categories_list_unit {
+
+}
+.content_main_categories_list_unit_img {
+    max-width: 551px;
+    height: 392px;
+}
+.content_main_categories_list_unit a {
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+}
+
 /*Main page - end*/
 .content {
     width: 100%;
