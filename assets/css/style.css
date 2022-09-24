@@ -148,7 +148,7 @@ body {
     top: -3px;
 }
 .header_bottom {
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -180,24 +180,98 @@ body {
     width: 100%;
     justify-content: space-between;
 }
-
-#list1:after {
+.header_bottom_nav_list li {
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    flex: 1;
+}
+.header_bottom_nav_list_li {
+    position: relative;
+    flex-grow: 0.1;
+}
+.header_bottom_nav_list_li:after {
     content: "";
     position: absolute;
     width: 16px;
     height: 9px;
-    margin-left: 10px;
+    right: 24px;
     margin-top: 9px;
     background: url(../images/svg/arrow.svg);
 }
-#list2:after {
+.header_bottom_nav_list_li_hover:after {
     content: "";
     position: absolute;
     width: 16px;
     height: 9px;
-    margin-left: 10px;
+    right: 24px;
     margin-top: 9px;
-    background: url(../images/svg/arrow.svg);
+    background: url(../images/svg/arrow-hover.svg);
+}
+.header_bottom_nav_list li:hover {
+    background: #FFFFFF;
+    color: #4F0090;
+    border-radius: 15px;
+    box-shadow: inset 0px 1px 4px 0px, inset 1px 0px 9px 2px;
+}
+.header_bottom_nav_list_li_categories {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 10px;
+    display: none;
+}
+.header_bottom_nav_list_li_categories a, .header_bottom_nav_list_li_news a{
+    text-decoration: none;
+}
+.header_bottom_nav_list_li_categories_unit {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: left;
+    background: linear-gradient(45deg, #4F0090, #21048C);
+    padding: 4px 4px 2px 11px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid #21048C;
+    border-left: 4px solid #21048C;
+    border-right: 4px solid #21048C;
+    min-width: 280px;
+    width: 100%;
+    font-family: OpenSans-Bold;
+    cursor: pointer;
+}
+.header_bottom_nav_list_li_categories_unit:hover, .header_bottom_nav_list_li_news_unit:hover {
+    background: #FFFFFF;
+    color: #21048C;
+}
+.header_bottom_nav_list_li_news {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.header_bottom_nav_list_li_news_unit {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: left;
+    background: linear-gradient(45deg, #4F0090, #21048C);
+    padding: 4px 4px 2px 11px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid #21048C;
+    border-left: 4px solid #21048C;
+    border-right: 4px solid #21048C;
+    min-width: 280px;
+    width: 100%;
+    font-family: OpenSans-Bold;
+    cursor: pointer;
 }
 #news {
     font-family: OpenSans-Bold;
@@ -232,7 +306,7 @@ body {
 
 }
 .content_main_top_img {
-    max-width: 594px;
+    min-width: 594px;
     max-height: 522px;
 }
 .content_main_top_text {
@@ -381,6 +455,26 @@ body {
     outline: none;
     cursor: pointer;
 }
+.content_main_news_products_unit_text_cost_1 {
+    margin-right: auto;
+    margin-left: auto;
+    background: #FFFFFF;
+    border-radius: 6px;
+    width: 122px;
+    height: 42px;
+    position: relative;
+    border: 3px solid #4F0090;
+    color: #4F0090;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: OpenSans-SemiBold;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 7px 0px, inset -2px -2px 7px 0px;
+}
 .content_main_news_products_unit_text_cost p:before {
     content: "";
     background: url(../images/svg/cart.svg);
@@ -413,12 +507,13 @@ body {
     height: 101px;
     background: #21048C;
     border-radius: 101px;
-    padding: 20px;
+    padding: 26px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     outline: none;
     cursor: pointer;
+    text-align: left;
 }
 
 .content_main_faq_answer_btn_unit p {
@@ -463,6 +558,9 @@ body {
     height: 73px;
     padding: 10px;
     font-size: 33px;
+    outline: none;
+    color: rgba(53, 5, 92, 0.62);
+    font-weight: 700;
 }
 #feedback_form_name::placeholder, #feedback_form_number::placeholder {
     font-style: normal;
@@ -629,7 +727,7 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
+    gap: 10px;
 }
 .footer_top_img {
     margin-right: 10px;
@@ -661,7 +759,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
+    padding-left: 50px;
 }
 .footer_top_catalog_heading {
     font-family: OpenSans-Bold;
