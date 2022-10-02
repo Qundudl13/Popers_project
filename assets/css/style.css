@@ -162,7 +162,6 @@ body {
     align-items: center;
     max-width: 1300px;
     width: 100%;
-    padding: 10px;
 }
 
 .header_bottom_nav_list{
@@ -184,18 +183,17 @@ body {
     user-select: none;
     cursor: pointer;
     padding: 10px;
-    flex: 1;
+    flex-grow: 1;
 }
 .header_bottom_nav_list_li {
     position: relative;
-    flex-grow: 0.1;
 }
 .header_bottom_nav_list_li:after {
     content: "";
     position: absolute;
     width: 16px;
     height: 9px;
-    right: 24px;
+    margin-left: 4px;
     margin-top: 9px;
     background: url(../images/svg/arrow.svg);
 }
@@ -204,7 +202,7 @@ body {
     position: absolute;
     width: 16px;
     height: 9px;
-    right: 24px;
+    margin-left: 4px;
     margin-top: 9px;
     background: url(../images/svg/arrow-hover.svg);
 }
@@ -469,13 +467,14 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    font-family: OpenSans-SemiBold;
+    font-family: OpenSans-Bold;
+    padding: 0;
     text-align: center;
     outline: none;
     cursor: pointer;
     box-shadow: inset 2px 2px 7px 0px, inset -2px -2px 7px 0px;
 }
-.content_main_news_products_unit_text_cost p:before {
+.content_main_news_products_unit_text_cost:before {
     content: "";
     background: url(../images/svg/cart.svg);
     position: absolute;
@@ -484,6 +483,9 @@ body {
     left: 7px;
     top: 9px;
     margin-left: 10px;
+}
+.content_main_news_products_unit_text_cost_1:before { 
+    display: none;
 }
 .content_main_faq {
     display: flex;
@@ -503,28 +505,71 @@ body {
     flex-direction: column;
     gap: 20px;
 }
+.content_main_faq_answer_btn_unit_wrapper {
+    background: #f9f9f9;
+}
 .content_main_faq_answer_btn_unit {
     height: 101px;
+    width: 100%;
     background: #21048C;
-    border-radius: 101px;
-    padding: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    border-radius: 50px;
+    padding: 10px; 
     outline: none;
     cursor: pointer;
     text-align: left;
-}
-
-.content_main_faq_answer_btn_unit p {
+    border: none;
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 25px;
     line-height: 45px;
     color: #FFFFFF;
+}
+.content_main_faq_answer_btn_unit_hover {
+    height: 101px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px; 
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 45px;
+    color: #21048C;
+    border: 3px solid #21048C;
+    box-shadow: inset 0px 0px 10px 0px #21048C;
+}
+.content_main_faq_answer_btn_unit p, .content_main_faq_answer_btn_unit_hover p {
     position: relative;
 }
-
+.content_main_faq_answer_btn_unit p:after {
+    content: "";
+    background: url(../images/svg/arrow-main.svg);
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    top: 15px;
+    right: 4px;
+}
+.content_main_faq_answer_btn_unit_hover p:after {
+    content: "";
+    background: url(../images/svg/arrow-hover-bigger.svg);
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    top: 15px;
+    right: 4px;
+}
+.content_main_faq_answer_btn_unit_text {
+    color: black;
+    display: none;
+    font-size: 24px;
+    margin-left: 30px;
+    max-width: 500px;
+}
 .content_main_faq_feedback {
     border: 5px solid #4F0090;
     border-radius: 46px;
@@ -536,6 +581,8 @@ body {
     text-align: center;
     max-width: 400px;
     gap: 10px;
+    margin-left: auto;
+    max-height: 508px;
 }
 .content_main_faq_feedback p {
     font-style: normal;
@@ -559,13 +606,16 @@ body {
     padding: 10px;
     font-size: 33px;
     outline: none;
-    color: rgba(53, 5, 92, 0.62);
+    color: rgba(79, 0, 144, 0.62);
     font-weight: 700;
 }
 #feedback_form_name::placeholder, #feedback_form_number::placeholder {
     font-style: normal;
     font-weight: 700;
     color: rgba(79, 0, 144, 0.62);
+}
+#feedback_form_name:focus, #feedback_form_number:focus {
+    border: 4px solid rgba(142, 0, 200, 0.63);
 }
 #feedback_form_submit {
     width: 251px;
@@ -582,6 +632,10 @@ body {
     font-family: OpenSans-bold;
     outline: none;
     cursor: pointer;
+    border: none;
+}
+#feedback_form_submit:hover {
+    background: #6c16b3;
 }
 .content_main_faq_feedback smal {
     font-style: normal;
