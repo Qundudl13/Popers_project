@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
-    <script src = "https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src ="assets/js/script.js"></script>
 </head>
 <body>
     <header class = "header">
         <div class = "header_top">
-            <div class = "header_top_contacts_mobile_number">+7 (999) 996-74-79</div>
-            <div class = "header_top_contacts_email_number">poppers46@poppers.ru</div>
+            <div class = "header_top_contacts">
+                <div class = "contacts">+7 (999) 996-74-79</div>
+                <div class = "contacts">poppers46@poppers.ru</div>
+            </div>
             <div class = "header_top_logo">
                 <img id = "logo" src = "assets/images/svg/header-logo.svg" alt = "">
             </div>
@@ -23,9 +23,15 @@
             <div class = "header_top_basket">
                 1
             </div>
+
         </div>
         <div class = "header_bottom">
             <nav class = "header_bottom_nav">
+                <div class = "header_top_burger">
+                    <span class = "header_top_burger_line"></span>
+                    <span class = "header_top_burger_line"></span>
+                    <span class = "header_top_burger_line"></span>
+                </div>
                 <ul class = "header_bottom_nav_list">
                     <li class = "header_bottom_nav_list_li">
                         Поперсы
@@ -92,7 +98,7 @@
                     <img src = "assets/images/png/poppers.png">
                 </div>
                 <div class = "content_main_top_text">
-                    <div class = "content_main_top_text_heading">Poppers46</div>
+                    <div id = "main_top-heading">Poppers46</div>
                     <p>Вы искали, где купить попперсы с доставкой в Курске? 
                         Poppers46 — магазин самых популярных попперсов в Курске. Здесь собрана линейка продукции для 
                         поддержания и усиления страсти во время занятия сексом. Благодаря большому количеству ароматов, 
@@ -103,6 +109,31 @@
             </section>
             <section class = "content_main_news">
                 <div class = "content_main_heading">НОВИНКИ</div>
+                <div id = "news_arrow_left">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+width="116.000000pt" height="116.000000pt" viewBox="0 0 776.000000 616.000000"
+preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,616.000000) scale(0.100000,-0.100000)"
+                        fill="#024489" stroke="none">
+                        <path d="M3830 4629 c-566 -54 -1043 -408 -1267 -939 -208 -494 -138 -1077
+                        182 -1506 315 -423 838 -661 1349 -614 590 53 1065 398 1293 940 158 376 158
+                        817 -2 1189 -226 530 -701 874 -1284 931 -114 11 -147 11 -271 -1z m348 -104
+                        c268 -40 490 -137 692 -300 407 -328 607 -852 520 -1360 -26 -152 -52 -237
+                        -111 -363 -105 -226 -223 -377 -411 -529 -96 -77 -151 -111 -279 -173 -496
+                        -237 -1084 -169 -1509 175 -407 328 -607 852 -520 1360 26 152 52 237 111 363
+                        105 226 223 377 411 529 98 79 153 112 288 176 255 120 540 163 808 122z"/>
+                        <path d="M3509 3407 c-315 -205 -414 -275 -405 -284 8 -8 743 -493 813 -536
+                        16 -10 11 4 -51 136 -25 54 -46 100 -46 102 0 2 16 -1 35 -6 20 -6 233 -9 522
+                        -7 480 3 489 3 529 25 99 53 139 144 132 302 -5 110 -24 158 -82 209 -68 60
+                        -90 62 -610 62 -279 0 -485 -4 -505 -10 -19 -5 -36 -8 -38 -6 -2 1 20 51 47
+                        111 52 110 81 175 77 175 -1 0 -189 -123 -418 -273z m135 -127 c-35 -77 -64
+                        -145 -64 -151 0 -6 29 -73 64 -150 35 -76 59 -136 53 -132 -53 31 -423 276
+                        -424 281 -2 5 424 292 434 292 1 0 -28 -63 -63 -140z m1249 -9 l42 -40 3 -115
+                        4 -115 -40 -43 -41 -43 -505 -3 -506 -3 -43 40 -42 40 -3 114 -4 114 33 38
+                        c18 20 42 41 53 45 12 5 243 9 514 9 l493 1 42 -39z"/>
+                        </g>
+                    </svg>
+                </div>
                 <div class = "content_main_news_products">
                     <div class = "content_main_news_products_unit">
                         <div class = "content_main_news_products_unit_img">
@@ -140,7 +171,7 @@
                                     Пропилнитрит
                                 </div>
                             </div>
-                            <button id = "news_products_btn_1" class = "content_main_news_products_unit_text_cost">
+                            <button class = "content_main_news_products_unit_text_cost">
                                 <p>1500 ₽</p>
                             </button>
                         </div>
@@ -181,7 +212,7 @@
                                     Пропилнитрит
                                 </div>
                             </div>
-                            <button id = "news_products_btn_2" class = "content_main_news_products_unit_text_cost">
+                            <button class = "content_main_news_products_unit_text_cost">
                                 <p>1500 ₽</p>
                             </button>
                         </div>
@@ -222,7 +253,7 @@
                                     Пропилнитрит
                                 </div>
                             </div>
-                            <button id = "news_products_btn_3" class = "content_main_news_products_unit_text_cost">
+                            <button class = "content_main_news_products_unit_text_cost">
                                 <p>1500 ₽</p>
                             </button>
                         </div>
@@ -263,11 +294,120 @@
                                     Пропилнитрит
                                 </div>
                             </div>
-                            <button id = "news_products_btn_4" class = "content_main_news_products_unit_text_cost">
+                            
+                            <button class = "content_main_news_products_unit_text_cost">
                                 <p>1500 ₽</p>
                             </button>
                         </div>
                     </div>
+                    <div class = "content_main_news_products_unit">
+                        <div class = "content_main_news_products_unit_img">
+                            <img src = "assets/images/png/product.png">
+                        </div>
+                        <div class = "content_main_news_products_unit_text">
+                            <div class = "content_main_news_products_unit_text_heading">Dominator Red 10ml</div>
+                            <div class = "content_main_news_products_unit_text_lvl">
+                                <p>Уровень эйфории:</p>
+                                <div class = "content_main_news_products_unit_text_lvl_images">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/nopaint-star.svg">
+                                </div>
+                            </div>
+                            <div class = "content_main_news_products_unit_text_details">
+                                <div class = "content_main_news_products_unit_text_details_weight">
+                                    <p>Объём: </p>
+                                    <div class = "content_main_news_products_unit_text_details_weight_volume">
+                                        10мл
+                                    </div>
+                                </div>
+                                <div class = "content_main_news_products_unit_text_details_location">
+                                    <p>Страна: </p>
+                                    <div class = "content_main_news_products_unit_text_details_location_value">
+                                        Франция
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "content_main_news_products_unit_text_structure">
+                                <p>Состав: </p>
+                                <div class = "content_main_news_products_unit_text_structure_value">
+                                    Пропилнитрит
+                                </div>
+                            </div>
+                            <button class = "content_main_news_products_unit_text_cost">
+                                <p>1500 ₽</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class = "content_main_news_products_unit">
+                        <div class = "content_main_news_products_unit_img">
+                            <img src = "assets/images/png/product.png">
+                        </div>
+                        <div class = "content_main_news_products_unit_text">
+                            <div class = "content_main_news_products_unit_text_heading">Dominator Red 10ml</div>
+                            <div class = "content_main_news_products_unit_text_lvl">
+                                <p>Уровень эйфории:</p>
+                                <div class = "content_main_news_products_unit_text_lvl_images">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/paint_star.svg">
+                                    <img src = "assets/images/svg/nopaint-star.svg">
+                                </div>
+                            </div>
+                            <div class = "content_main_news_products_unit_text_details">
+                                <div class = "content_main_news_products_unit_text_details_weight">
+                                    <p>Объём: </p>
+                                    <div class = "content_main_news_products_unit_text_details_weight_volume">
+                                        10мл
+                                    </div>
+                                </div>
+                                <div class = "content_main_news_products_unit_text_details_location">
+                                    <p>Страна: </p>
+                                    <div class = "content_main_news_products_unit_text_details_location_value">
+                                        Франция
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "content_main_news_products_unit_text_structure">
+                                <p>Состав: </p>
+                                <div class = "content_main_news_products_unit_text_structure_value">
+                                    Пропилнитрит
+                                </div>
+                            </div>
+                            <button class = "content_main_news_products_unit_text_cost">
+                                <p>1500 ₽</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id = "news_arrow_right">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="116.000000pt" height="116.000000pt" viewBox="0 0 776.000000 616.000000"
+                    preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,616.000000) scale(0.100000,-0.100000)"
+                        fill="#024489" stroke="none">
+                            <path d="M3830 4629 c-566 -54 -1043 -408 -1267 -939 -208 -494 -138 -1077
+                            182 -1506 315 -423 838 -661 1349 -614 590 53 1065 398 1293 940 158 376 158
+                            817 -2 1189 -226 530 -701 874 -1284 931 -114 11 -147 11 -271 -1z m348 -104
+                            c268 -40 490 -137 692 -300 407 -328 607 -852 520 -1360 -26 -152 -52 -237
+                            -111 -363 -105 -226 -223 -377 -411 -529 -96 -77 -151 -111 -279 -173 -496
+                            -237 -1084 -169 -1509 175 -407 328 -607 852 -520 1360 26 152 52 237 111 363
+                            105 226 223 377 411 529 98 79 153 112 288 176 255 120 540 163 808 122z"/>
+                            <path d="M4017 3603 c4 -10 30 -70 58 -133 l51 -115 -520 0 c-517 0 -521 0
+                            -562 -22 -99 -53 -139 -144 -132 -302 5 -110 24 -158 82 -209 68 -60 90 -62
+                            610 -62 261 0 486 4 504 9 17 5 32 8 32 6 0 -2 -63 -155 -117 -284 -4 -8 28
+                            10 70 40 594 421 737 523 737 528 0 3 -28 25 -63 48 -34 22 -116 78 -182 123
+                            -396 272 -574 389 -568 373z m446 -403 c115 -79 205 -146 200 -150 -7 -6 -289
+                            -205 -386 -273 -16 -10 -30 -17 -33 -15 -2 3 23 70 56 149 l60 144 -39 90
+                            c-22 50 -51 116 -66 149 -17 37 -21 57 -13 53 8 -2 107 -69 221 -147z m-320
+                            21 l42 -40 3 -115 4 -115 -40 -43 -41 -43 -505 -3 -506 -3 -43 40 -42 40 -3
+                            114 -4 114 33 38 c18 20 42 41 53 45 12 5 243 9 514 9 l493 1 42 -39z"/>
+                        </g>
+                    </svg>
                 </div>
             </section>
             <section class = "content_main_info">
@@ -303,7 +443,7 @@
             </section>
             <section class = "content_main_faq">
                 <div class = "content_main_faq_answer">
-                    <div class = "content_main_faq_answer_heading">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</div>
+                    <div id = "main_faq-heading">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</div>
                     <div class = "content_main_faq_answer_btn">
                         <div class = "content_main_faq_answer_btn_unit_wrapper">
                             <button class = "content_main_faq_answer_btn_unit">
@@ -380,55 +520,64 @@
             </section>
         </div>
     </main>
-
     <footer class = "footer">
         <div class = "footer_wrapper">
             <div class = "footer_top">
                 <div class = "footer_top_img">
                     <img src = "assets/images/svg/footer-logo.svg">
                 </div>
-                <div class = "footer_top_catalog">
-                    <div class = "footer_top_catalog_heading">КАТАЛОГ</div>
-                    <ul class = "footer_top_catalog_list">
-                        <li>КАНАДСКИЕ ПОППЕРСЫ</li>
-                        <li>РОССИЙСКИЕ ПОППЕРСЫ</li>
-                        <li>НАБОРЫ ДЛЯ НОВИЧКОВ</li>
-                        <li>ДЛЯ ТУСОВОК</li>
-                    </ul>
-                </div>
-                <div class = "footer_top_nav">
-                    <div class = "footer_top_catalog_heading_p">Poppers46</div>
-                    <ul class = "footer_top_nav_list">
-                        <li>НОВОСТИ</li>
-                        <li>КОНТАКТЫ</li>
-                        <li>ДОСТАВКА</li>
-                        <li>САМОВЫВОЗ</li>
-                    </ul>
-                </div>
-                <div class = "footer_top_contacts">
-                    <div class = "footer_top_catalog_heading">КОНТАКТЫ</div>
-                    <div class = "footer_top_contacts_adress">
-                        <div class = "footer_top_contacts_heading_address">Адресс:</div>
-                        <p>г. Курск, ул. 1-я Орловская, д. 25</p>
-                    </div>
-                    <div class = "footer_top_contacts_time_work">
-                        <div class = "footer_top_contacts_heading_time_work">Время работы:</div>
-                        <p>ПН-ВС с 10:00 до 20:00. Доставка круглосуточно</p>
+                <div class="footer_top_btn">
+                    <div class = "footer_top_catalog">
+                        <div class = "footer_top_heading">КАТАЛОГ</div>
+                        <ul class = "footer_top_catalog_list">
+                            <li>КАНАДСКИЕ ПОППЕРСЫ</li>
+                            <li>РОССИЙСКИЕ ПОППЕРСЫ</li>
+                            <li>НАБОРЫ ДЛЯ НОВИЧКОВ</li>
+                            <li>ДЛЯ ТУСОВОК</li>
+                        </ul>
                     </div>
                 </div>
-                <div class = "footer_top_contacts_info">
-                    <p class = "footer_top_contacts_mobile_number">+7 (999) 996-74-79</p>
-                    <div class = "footer_top_contacts_social_networks">
-                        <div class = "footer_top_catalog_heading_m">Мы в соцсетях</div>
-                        <div class = "footer_top_contacts_social_networks_list">
-                            <div class = "footer_top_contacts_social_networks_list_img">
-                                <img src = "assets/images/svg/vk.svg">
+                <div class="footer_top_btn">
+                    <div class = "footer_top_nav">
+                        <div class = "footer_top_heading">Poppers46</div>
+                        <ul class = "footer_top_nav_list">
+                            <li>НОВОСТИ</li>
+                            <li>КОНТАКТЫ</li>
+                            <li>ДОСТАВКА</li>
+                            <li>САМОВЫВОЗ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_top_btn">
+                    <div class = "footer_top_heading">КОНТАКТЫ</div>
+                    <div class = "footer_top_contacts">
+                        <div class="footer_top_contacts_details">
+                            <div class = "footer_top_contacts_adress">
+                                <div class = "footer_top_contacts_heading_address">Адресс:</div>
+                                <p>г. Курск, ул. 1-я Орловская, д. 25</p>
                             </div>
-                            <div class = "footer_top_contacts_social_networks_list_img">
-                                <img src = "assets/images/svg/tg.svg">
+                            <div class = "footer_top_contacts_time_work">
+                                <div class = "footer_top_contacts_heading_time_work">Время работы:</div>
+                                <p>ПН-ВС с 10:00 до 20:00. Доставка круглосуточно</p>
                             </div>
-                            <div class = "footer_top_contacts_social_networks_list_img">
-                                <img src = "assets/images/svg/inst.svg">
+                        </div>
+                    
+                
+                        <div class = "footer_top_contacts_info">
+                            <p class = "contacts">+7 (999) 996-74-79</p>
+                            <div class = "footer_top_contacts_social_networks">
+                                <div class = "footer_top_catalog_heading_m">Мы в соцсетях</div>
+                                <div class = "footer_top_contacts_social_networks_list">
+                                    <div class = "footer_top_contacts_social_networks_list_img">
+                                        <img src = "assets/images/svg/vk.svg">
+                                    </div>
+                                    <div class = "footer_top_contacts_social_networks_list_img">
+                                        <img src = "assets/images/svg/tg.svg">
+                                    </div>
+                                    <div class = "footer_top_contacts_social_networks_list_img">
+                                        <img src = "assets/images/svg/inst.svg">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -440,5 +589,7 @@
             </div>
         </div>
     </footer>
+    <script src = "https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src ="assets/js/script.js"></script>
 </body>
 </html>
